@@ -1,3 +1,19 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="container">
+    <view class="canvas-box" hover-class="none" hover-stop-propagation="false">
+        <canvas canvas-id="mycanvas" id="mycanvas" disable-scroll="{{true}}"></canvas>
+    </view>
+    <view class="canvas-tools">
+        <view class="box1" data-pram="5">
+            <text class="iconfont iconqianbi"></text>
+        </view>
+        <view class="box2" data-pram="15">
+            <text class="iconfont iconicon-test"></text>
+        </view>
+        <view class="box3" data-pram="red"></view>
+        <view class="box4" data-pram="orange"></view>
+        <view class="box5" data-pram="remove">
+            <text class="iconfont iconxiangpica"></text>
+        </view>
+    </view>
 </view>
