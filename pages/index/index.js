@@ -14,11 +14,11 @@ Page({
     ctx.setLineWidth(this.data.pen.linewidth);
     ctx.setLineCap('round');
     ctx.lineJoin = 'round';
-    console.log(ctx)
   },
   touchStart: function (e) {
+    ctx.setStrokeStyle(this.data.pen.color)
+    ctx.setLineWidth(this.data.pen.linewidth);
     ctx.moveTo(e.touches[0].x, e.touches[0].y)
-    console.log(e.touches[0].x, e.touches[0].y)
   },
   touchMove: function (e) {
     let x = e.touches[0].x
@@ -26,6 +26,12 @@ Page({
     ctx.lineTo(x, y);
     ctx.stroke();
     ctx.draw(true);
-    ctx.moveTo(x,y)
+    ctx.moveTo(x, y)
+  },
+  drawSize: function (e) {
+    this.setData({ 'pen.linewidth': e.target.dataset.pram })
+  },
+  drawColor: function (e) {
+    this.setData({ 'pen.color': e.target.dataset.pram })
   }
 })

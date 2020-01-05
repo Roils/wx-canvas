@@ -4,15 +4,15 @@
         <canvas canvas-id="mycanvas" id="mycanvas" class="mycanvas" disable-scroll="{{true}}" bindtouchstart="touchStart" bindtouchmove="touchMove"></canvas>
     </view>
     <view class="canvas-tools">
-        <view class="box1" data-pram="5">
+        <view class="box1" data-pram="5" bindtap="drawSize">
             <text class="iconfont iconqianbi"></text>
         </view>
-        <view class="box2" data-pram="15">
+        <view class="box2" data-pram="15" bindtap="drawSize">
             <text class="iconfont iconicon-test"></text>
         </view>
-        <view class="box3" data-pram="#cc0033"></view>
-        <view class="box4" data-pram="orange"></view>
-        <view class="box5" data-pram="remove">
+        <view class="box3" data-pram="#FF6347" bindtap="drawColor"></view>
+        <view class="box4" data-pram="#FF7F24" bindtap="drawColor"></view>
+        <view class="box5" data-pram="#FFFFFF" bindtap="drawColor">
             <text class="iconfont iconxiangpica"></text>
         </view>
     </view>
