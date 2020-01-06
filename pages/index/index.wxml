@@ -5,15 +5,15 @@
     </view>
     <view class="canvas-tools">
         <view class="box1" data-pram="5" bindtap="drawSize">
-            <text class="iconfont iconqianbi"></text>
+            <!-- <text class="iconfont iconqianbi"></text> -->
         </view>
         <view class="box2" data-pram="15" bindtap="drawSize">
-            <text class="iconfont iconicon-test"></text>
+            <!-- <text class="iconfont iconicon-test"></text> -->
         </view>
-        <view class="box3" data-pram="#FF6347" bindtap="drawColor"></view>
-        <view class="box4" data-pram="#FF7F24" bindtap="drawColor"></view>
-        <view class="box5" data-pram="#FFFFFF" bindtap="drawColor">
-            <text class="iconfont iconxiangpica"></text>
+        <view class="box3" bindtap="drawColor" data-pram="#FF6347"></view>
+        <view class="box4" bindtap="drawColor" data-pram="#FF7F24"></view>
+        <view class="box5" bindtap="drawColor" data-pram="#f8f8f8" >
+            <!-- <text class="iconfont iconxiangpica"></text> -->
         </view>
     </view>
 </view>

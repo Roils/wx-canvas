@@ -8,7 +8,7 @@ Page({
       color: 'red'
     }
   },
-  onLoad: function (options) {
+  onLoad: function () {
     ctx = wx.createCanvasContext('mycanvas')
     ctx.setStrokeStyle(this.data.pen.color)
     ctx.setLineWidth(this.data.pen.linewidth);
@@ -30,8 +30,10 @@ Page({
   },
   drawSize: function (e) {
     this.setData({ 'pen.linewidth': e.target.dataset.pram })
+    console.log(e)
   },
   drawColor: function (e) {
     this.setData({ 'pen.color': e.target.dataset.pram })
-  }
+    console.log(e)
+  },
 })
